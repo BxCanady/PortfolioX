@@ -8,10 +8,10 @@ jobs:
     steps:
       - checkout
 
-      # Install Vercel CLI
+      # Install Vercel CLI locally
       - run:
           name: Install Vercel CLI
-          command: npm install -g vercel
+          command: npm install vercel
 
       # Deploy to Vercel
       - run:
