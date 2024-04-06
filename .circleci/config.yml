@@ -1,26 +1,34 @@
 version: 2.1
+
 jobs:
   build:
     docker:
-      - image: circleci/node:16
+      - image: circleci/node:14
+
     steps:
       - checkout
+      # Install dependencies
       - run:
-          name: Install dependencies
+          name: Install Dependencies
           command: npm install
+
+      # Build React app
       - run:
-          name: Build
+          name: Build React App
           command: npm run build
-  deploy:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - checkout
+
+      # Deploy to Vercel
       - run:
           name: Deploy to Vercel
           command: |
-            curl -H "Content-Type: application/json" \
-                 -H "Authorization: Bearer $VERCEL_TOKEN" \
-                 -d '{"name":"YOUR_PROJECT_NAME"}' \
-                 https://api.vercel.com/v12/now/deployments
+            VERCEL_TOKEN=$VERCEL_TOKEN vercel --prod
 
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - build
