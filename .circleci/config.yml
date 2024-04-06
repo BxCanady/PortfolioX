@@ -3,10 +3,11 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:16
 
     steps:
       - checkout
+
       # Install Vercel CLI
       - run:
           name: Install Vercel CLI
@@ -15,8 +16,7 @@ jobs:
       # Deploy to Vercel
       - run:
           name: Deploy to Vercel
-          command: |
-            VERCEL_TOKEN=$VERCEL_TOKEN vercel --prod
+          command: VERCEL_TOKEN=$Vercel npx vercel --prod
 
 workflows:
   version: 2
