@@ -7,15 +7,10 @@ jobs:
 
     steps:
       - checkout
-      # Install dependencies
+      # Install Vercel CLI
       - run:
-          name: Install Dependencies
-          command: npm install
-
-      # Build React app
-      - run:
-          name: Build React App
-          command: npm run build
+          name: Install Vercel CLI
+          command: npm install -g vercel
 
       # Deploy to Vercel
       - run:
