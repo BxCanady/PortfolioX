@@ -53,7 +53,7 @@ const [showComingSoon, setShowComingSoon] = useState(false); // State to manage 
                             Demo
                           </button>
                         </a>
-                        <a href="/"
+                        <a href="https://github.com/BxCanady?tab=repositories"
                          target="_blank" rel="noopener noreferrer"
                         >
                           <button className="animate-pulse group text-white px-4 py-3 m-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
@@ -79,7 +79,7 @@ const [showComingSoon, setShowComingSoon] = useState(false); // State to manage 
                                         >
                                           Demo
                                         </button>
-                <a href="/"
+                <a href="https://github.com/BxCanady?tab=repositories"
                  target="_blank" rel="noopener noreferrer"
                 >
                   <button className="animate-pulse group text-white px-4 py-3 m-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
@@ -106,7 +106,7 @@ const [showComingSoon, setShowComingSoon] = useState(false); // State to manage 
                             Demo
                           </button>
 
-                        <a href="/"
+                        <a href="https://github.com/BxCanady?tab=repositories"
                          target="_blank" rel="noopener noreferrer"
                         >
                           <button className="animate-pulse group text-white px-4 py-3 m-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
