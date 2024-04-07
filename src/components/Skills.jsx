@@ -51,17 +51,18 @@ const Skills = () => {
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500;'>
                   <p className='my-4'> GIT/CIRCLE CI</p>
               </div>
+              <div className='w-full bg-[#0a192f] h-100px bg-[#0a192f] text-gray-300'>></div>
           </div>
           <div>
                     <Link
                       to="work"
                       smooth
                       duration={500}
-                      className="animate-pulse group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+                      className="animate-pulse group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer z-20"
                     >
                       Projects
-                      <span className="group-hover:rotate-90 duration-300">
-                        <HiArrowNarrowRight size={25} className="ml-3" />
+                      <span className="group-hover:rotate-90 duration-300 z-20">
+                        <HiArrowNarrowRight size={25} className="ml-3 z-20" />
                       </span>
                     </Link>
                   </div>

@@ -115,18 +115,18 @@ const [showComingSoon, setShowComingSoon] = useState(false); // State to manage 
                         </a>
                       </div>
                     </div>
-                    <div className="absolute inset-0 rounded-md flex bg-auto bg-center opacity-0 group-hover:opacity-100" style={{ backgroundImage: `url(${docman})`,
-                      backgroundSize: 'contain', backgroundRepeat: 'no-repeat', marginTop: '-550px'}}></div>
+                    <div className="absolute inset-0 rounded-md flex bg-auto bg-center opacity-0 group-hover:opacity-100 " style={{ backgroundImage: `url(${docman})`,
+                      backgroundSize: 'contain', backgroundRepeat: 'no-repeat', marginTop: '-525px'}}></div>
                   </div>
         </div>
          <div>
                                   <Link
-                                    to="comments"
+                                    to="bloglist"
                                     smooth
                                     duration={500}
                                     className="animate-pulse group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer z-50"
                                   >
-                                    Comments
+                                    Blogs
                                     <span className="group-hover:rotate-90 duration-300 ">
                                       <HiArrowNarrowRight size={25} className="ml-3 z-50" />
                                     </span>

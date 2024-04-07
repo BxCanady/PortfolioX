@@ -6,30 +6,20 @@ import Skills from './components/Skills';
 import Works from './components/Works';
 import BlogList from './components/BlogList';
 import Comments from './components/Comments';
-
+import Spacer from './components/Spacer';
 
 function App() {
   return (
     <div className="app">
       <Navbar />
       <Home />
-      <>
-        <About />
-      </>
-      <>
-        <Skills />
-      </>
-      <>
-        <Works />
-      </>
-       <>
-              <Comments />
-            </>
-      <>
-        <BlogList />
-      </>
-
-
+      <About />
+      <Skills />
+        <Spacer height="10" />
+      <Works />
+      <BlogList />
+      <Spacer height="10" />
+      <Comments />
     </div>
   );
 }

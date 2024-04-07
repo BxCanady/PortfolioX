@@ -45,16 +45,17 @@ const Navbar = () => {
                 Projects
               </Link>
             </li>
+             <li>
+                          <Link to='bloglist' smooth={true} duration={500} className="hover:text-blue-500">
+                            Blogs
+                          </Link>
+                        </li>
             <li>
               <Link to='comments' smooth={true} duration={500} className="hover:text-blue-500">
                 Comments
               </Link>
             </li>
-            <li>
-              <Link to='bloglist' smooth={true} duration={500} className="hover:text-blue-500">
-                Blogs
-              </Link>
-            </li>
+
           </ul>
           {/* Hamburger */}
           <div onClick={handleClick} className='md:hidden z-50'>
