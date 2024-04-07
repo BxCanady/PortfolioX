@@ -1,0 +1,29 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:16
+
+    steps:
+      - checkout
+
+      # Install Vercel CLI locally
+      - run:
+          name: Install Vercel CLI
+          command: npm install vercel
+
+      # Deploy to Vercel
+      - run:
+          name: Deploy to Vercel
+          command: VERCEL_TOKEN=$Vercel npx vercel --prod
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - build
